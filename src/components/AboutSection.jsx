@@ -64,7 +64,10 @@ const AboutSection = () => {
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-red-500/10">
               <img
                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80"
-                alt="AURIXAI Institute Campus"
+                alt="Cyber Institute
+Computer Education, Kotputli
+
+"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
@@ -99,13 +102,17 @@ const AboutSection = () => {
             </motion.span>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              AURIXAI Institute of
-              <span className="block text-red-600">Technology & Cyber Security</span>
+              Cyber Institute
+
+
+
+              <span className="block text-red-600">Computer Education</span>
             </h2>
 
             <p className="text-gray-600 leading-relaxed text-sm sm:text-base lg:text-lg">
               Established in <span className="font-semibold text-gray-800">2013</span>, 
-              AURIXAI has successfully trained thousands of students in cutting-edge 
+               Cyber Institute
+ has successfully trained thousands of students in cutting-edge 
               technologies including <span className="text-red-600 font-medium">Cyber Security</span>, 
               <span className="text-blue-600 font-medium"> Artificial Intelligence</span>, 
               <span className="text-green-600 font-medium"> Software Development</span>, 

@@ -17,6 +17,9 @@ const Navbar = () => {
   const [courseMenu, setCourseMenu] = useState(false);
   const [mobileCourseOpen, setMobileCourseOpen] = useState(false);
 
+  // WhatsApp link with pre-filled message
+  const whatsappLink = `https://api.whatsapp.com/send?phone=919251274680&text=Sir%2C%20mujhe%20course%20ke%20baare%20mein%20jankari%20chahiye.`;
+
   return (
     <>
       {/* TOP BAR - hidden on mobile, visible on md+ */}
@@ -37,10 +40,16 @@ const Navbar = () => {
             <FaInstagram className="hover:text-red-500 cursor-pointer transition-all" />
             <FaLinkedinIn className="hover:text-red-500 cursor-pointer transition-all" />
             <FaYoutube className="hover:text-red-500 cursor-pointer transition-all" />
-            <button className="flex items-center gap-2 bg-green-500 px-3 py-1 rounded-full hover:scale-105 transition-all text-xs md:text-sm">
+            {/* WhatsApp Button with direct link */}
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-green-500 px-3 py-1 rounded-full hover:scale-105 transition-all text-xs md:text-sm"
+            >
               <FaWhatsapp />
               WhatsApp
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -265,18 +274,26 @@ const Navbar = () => {
               <li className="px-4 sm:px-6 py-4 text-gray-400 text-xs sm:text-sm space-y-2 border-t border-gray-700">
                 <div className="flex items-center gap-2">
                   <FaPhoneAlt className="text-red-500" />
-                  <span>+91 9876543210</span>
+                  <span>+91 9251274680</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <FaEnvelope className="text-red-500" />
-                  <span>info@aurixai.com</span>
+                  <span>100nu2k26@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 pt-2">
                   <FaFacebookF className="hover:text-red-500 cursor-pointer transition-all" />
                   <FaInstagram className="hover:text-red-500 cursor-pointer transition-all" />
                   <FaLinkedinIn className="hover:text-red-500 cursor-pointer transition-all" />
                   <FaYoutube className="hover:text-red-500 cursor-pointer transition-all" />
-                  <FaWhatsapp className="hover:text-green-400 cursor-pointer transition-all text-green-500" />
+                  {/* WhatsApp icon with direct link */}
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-green-400 cursor-pointer transition-all text-green-500"
+                  >
+                    <FaWhatsapp />
+                  </a>
                 </div>
               </li>
             </ul>

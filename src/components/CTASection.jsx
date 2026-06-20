@@ -68,7 +68,8 @@ export default function CTASection() {
           viewport={{ once: true }}
           className="text-lg sm:text-xl md:text-2xl text-red-100 mt-3 sm:mt-4 max-w-2xl mx-auto"
         >
-          Join <span className="font-bold text-white">AURIXAI Institute</span> Today & 
+          Join <span className="font-bold text-white"> Cyber Institute
+</span> Today & 
           Get <span className="font-bold underline decoration-white/30">Industry-Ready</span> in Just 6 Months
         </motion.p>
 
